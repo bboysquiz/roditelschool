@@ -1,0 +1,135 @@
+.header
+    &__container
+        width: 1440px
+        padding: 13px 50px 0 50px
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+    &__list
+        &-menu
+            width: 738px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            list-style-type: none
+        &-item
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+            font-family: Steppe
+            color: #000
+            cursor: pointer
+    &__link
+        text-decoration: none
+        color: #000
+    &__nav
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 912px
+    &__entrance-button
+        display: flex
+        justify-content: space-between
+        width: 134px
+        height: 50px
+        align-items: center
+        border-radius: 50px
+        padding: 0 22px 0 20px
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+        cursor: pointer
+        &-title
+            font-family: Steppe
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+            color: #000
+    &__burger
+        display: none
+    &__nav_mobile
+        display: none
+
+@media screen and ( max-width: 1440px  )
+    .header__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+    .logo-wrapper
+        flex-wrap: wrap
+        justify-content: center
+        width: 243px
+    .header__list-menu
+        width: 605px
+    .header__list-item
+        font-size: 15px
+    .header__nav
+        width: 806px
+@media screen and ( max-width: 991px  )
+    .header__container
+        width: 767px
+        padding-left: 10px
+        padding-right: 10px
+    .header__logo-wrapper
+        flex-wrap: wrap
+        justify-content: center
+        width: 296px
+        padding-right: 10px
+    .header__list-menu
+        width: 400px
+    .header__list-item
+        font-size: 12px
+    .header__nav
+        width: 806px
+@media screen and ( max-width: 767px  )
+    .header__nav
+        display: none
+    .header__container
+        width: 320px
+        padding-left: 0px
+        padding-right: 0px
+        justify-content: center
+    .header__logo-wrapper
+        flex-wrap: wrap
+        justify-content: center
+        width: 205px
+        padding-right: 10px
+    .header__list-item
+        font-size: 12px
+    .header__burger
+        display: block
+        position: fixed
+        top: 16px
+        right: 25px
+        cursor: pointer
+        width: 30px
+        height: 28px
+        z-index: 100
+    .header__nav_mobile
+        display: none
+        justify-content: center
+        flex-wrap: wrap
+        height: 100vh
+        width: 100vw
+        z-index: 99
+        position: fixed
+        top: 0
+        left: 0
+    .header__list-item_mobile
+        background-color: #facbd2
+        border: 2px solid #000
+        font-weight: 400
+        font-size: 18px
+        line-height: 21px
+        font-family: Steppe
+        color: #000
+        cursor: pointer
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 16.666%
+        & a
+            width: 100%
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center

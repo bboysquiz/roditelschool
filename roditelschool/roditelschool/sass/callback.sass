@@ -1,0 +1,194 @@
+.callback
+    &__container
+        width: 1440px
+        padding: 60px 390px 0px 390px
+        display: flex
+        justify-content: center
+        margin: 0 auto
+        flex-wrap: wrap
+    &__title
+        width: 100%
+        text-align: center
+        line-height: 60px
+        font-size: 48px
+        font-weight: 400
+        font-family: Lobster
+        color: #000
+    &__subtitle
+        font-family: Steppe
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #000
+        margin-top: 15px
+        text-align: center
+        width: 557px
+    &__form
+        margin-top: 7px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        width: 660px
+    &__label
+        width: 100%
+        margin-top: 19px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        &-title
+            width: 100%
+            text-align: center
+            font-family: Steppe
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: #000
+    &__input
+        margin-top: 23px
+        width: 100%
+        border-radius: 40px
+        height: 42px
+        padding-left: 30px
+        font-family: Steppe
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #000
+        border: 2px solid #B86774
+        &[placeholder]
+            font-family: Steppe
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: #000
+            opacity: 0.5
+    &__question
+        &-input
+            border: 2px solid #B86774
+            margin-top: 23px
+            padding-top: 20px
+            width: 100%
+            height: 148px
+            border-radius: 40px
+            padding-left: 30px
+            font-family: Steppe
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: #000
+    &__radioButton
+        width: 30px
+        height: 30px
+        border-radius: 10px
+        &-wrapper
+            width: 100%
+            padding: 0 95px 0 95px
+            margin-top: 29px
+            display: flex
+            justify-content: space-between
+        &-descr
+            width: 420px
+            font-family: Steppe
+            font-weight: 400
+            font-size: 16px
+            line-height: 19px
+            color: #000
+            opacity: 0.5
+    &__button
+        margin-top: 22px
+        border: none
+        width: 175px!important
+    &__text
+        margin-top: 35px
+        width: 598px
+        font-family: Steppe
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        color: #000
+        opacity: 0.5
+        text-align: center
+    &-popup
+        width: 913px
+        height: 657px
+        top: 50%
+        margin-top: -328.5px
+        left: 50%
+        margin-left: -456.5px
+        position: fixed
+        background-color: #fff
+        z-index: 10
+        display: none
+        justify-content: center
+        &__layer
+            z-index: 9
+            background-color: #000
+            opacity: .5
+            top: 0
+            left: 0
+            width: 100vw
+            height: 100vh
+            position: fixed
+            display: none
+        &__container
+            width: 591px
+            display: flex
+            padding-top: 35px 
+            justify-content: center
+            flex-wrap: wrap
+        &__img
+            width: 398px
+            height: 283px
+        &__title
+            width: 100%
+            text-align: center
+            line-height: 60px
+            font-size: 48px
+            font-weight: 400
+            font-family: Lobster
+            color: #000
+        &__text
+            margin-top: 38px
+            color: #000
+            font-size: 18px
+            font-family: Steppe
+            line-height: 21.6px
+            font-weight: 400
+            text-align: center
+        &__button
+            width: 156px
+            height: 58px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #fad191
+            color: #000
+            border-radius: 50px
+            font-family: Steppe
+            font-weight: 400
+            font-size: 18px
+            line-height: 21.6px
+            cursor: pointer
+
+@media screen and ( max-width: 1440px  )
+    .callback__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+@media screen and ( max-width: 991px  )
+    .callback__container
+        width: 767px
+        padding-left: 10px
+        padding-right: 10px
+@media screen and ( max-width: 767px  )
+    .callback__container
+        width: 320px
+        padding-left: 10px
+        padding-right: 10px
+    .callback__form
+        width: 300px
+    .callback__radioButton-wrapper
+        padding: 0
+    .callback__radioButton-descr
+        width: 250px
+        font-size: 12px

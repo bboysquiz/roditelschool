@@ -1,0 +1,266 @@
+.courses
+    &__container
+        width: 1440px
+        padding: 116px 90px 0px 90px
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        flex-wrap: wrap
+    &__title
+        width: 100%
+        text-align: center
+        line-height: 60px
+        font-size: 48px
+        font-weight: 400
+        font-family: Lobster
+        color: #000
+    &__block
+        width: 370px
+        padding-top: 39px
+        padding-bottom: 40px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 50px
+        margin-top: 41px
+        &-list
+            margin-top: 39px
+            display: flex
+            justify-content: space-around
+            flex-wrap: wrap
+        &-title
+            width: 100%
+            text-align: center
+            line-height: 30px
+            font-size: 24px
+            font-weight: 400
+            font-family: Lobster
+            color: #000
+        &-img
+            width: 276px
+            height: 319px
+            margin-top: 29px
+        &-button
+            margin-top: 32px
+    &-popup
+        width: 1000px
+        height: 784px
+        top: 50%
+        margin-top: -367px
+        left: 50%
+        margin-left: -500px
+        position: fixed
+        background-color: #fff
+        display: none
+        justify-content: center
+        z-index: 10
+        &__layer
+            width: 100vw
+            height: 100vh
+            top: 0
+            left: 0
+            position: fixed
+            background-color: #000
+            opacity: .5
+            z-index: 9
+            display: none
+        &__container
+            display: flex
+            justify-content: space-between
+            width: 913px
+            position: relative
+            padding-top: 74px
+            padding-bottom: 80px
+        &__close
+            &-button
+                position: absolute
+                top: 31px
+                right: 0
+                width: 25.46px
+                height: 25.46px
+                cursor: pointer
+        &__img
+            width: 340px
+            height: 393px
+        &__block
+            width: 528px
+            display: flex
+            justify-content: left
+            flex-wrap: wrap
+            &-title
+                font-family: Lobster
+                font-size: 24px
+                line-height: 30px
+                font-weight: 400
+                color: #000
+            &-descr
+                margin-top: 25px
+                font-family: Steppe
+                font-weight: 400
+                font-size: 16px
+                line-height: 23.6px
+                color: #000
+            &-features
+                &-wrapper
+                    display: flex
+                    flex-wrap: wrap
+                    width: 455px
+                    justify-content: space-between
+            &-feature
+                width: 100%
+                display: flex
+                justify-content: left
+                &-icon
+                    width: 20px
+                    height: 20px
+                    margin-top: 25px
+                &-text
+                    color: #000
+                    line-height: 19.2px
+                    font-size: 16px
+                    font-weight: 400
+                    font-family: Steppe
+                    margin-left: 12px
+                    margin-top: 25px
+            &-rating
+                &-icon
+                    width: 24px
+                    height: 24px
+                    &-wrapper
+                        width: 152px
+                        display: flex
+                        justify-content: space-between
+                &-wrapper
+                    width: 457px
+                    display: flex
+                    justify-content: space-between
+                    margin-top: 22px
+                    align-items: center
+                &-text
+                    color: #000
+                    font-weight: 400
+                    font-family: Steppe
+                    font-size: 16px
+                    line-height: 19.2px
+            &-price
+                margin-top: 33px
+                color: #000
+                font-family: Lobster
+                font-weight: 400
+                font-size: 24px
+                line-height: 30px
+            &-button
+                width: 141px
+                height: 58px
+                border-radius: 50px
+                background-color: #fad191
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                color: #000
+                line-height: 21.6px
+                font-size: 18px
+                font-weight: 400
+                font-family: Steppe
+                margin-top: 22px
+                text-decoration: none
+
+#coursesSecond
+    height: 785px
+#coursesThird
+    height: 753px
+#coursesFourth
+    height: 602px
+#coursesFivth
+    height: 654px
+
+
+@media screen and ( max-width: 1440px  )
+    .courses__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+        padding-top: 50px
+    .courses__block
+        width: 300px
+    .courses-popup
+        width: 800px
+        margin-left: -400px
+    .courses-popup__container
+        width: 750px
+    .courses-popup__block
+        width: 380px
+    .courses-popup__block-descr
+        font-size: 13px
+    .courses-popup__block-features-wrapper
+        width: 380px
+    .courses-popup__block-price
+        margin-top: 0
+    .courses-popup__block-rating-text
+        font-size: 12px
+    .courses-popup__block-feature-icon
+        margin-top: 0
+    .courses-popup__block-feature-text
+        margin-top: 0
+    .courses-popup__block-feature
+        margin-top: 10px
+@media screen and ( max-width: 991px  )
+    .courses__container
+        width: 767px
+    .courses-popup
+        width: 700px
+        margin-left: -350px
+    .courses-popup__container
+        width: 670px
+    .courses-popup__block
+        width: 305px
+    .courses-popup__block-descr
+        font-size: 11px
+        line-height: 20px
+    .courses-popup__block-features-wrapper
+        width: 305px
+@media screen and ( max-width: 767px  )
+    .courses__container
+        width: 320px
+        padding-top: 100px
+    .courses__block-list
+        margin-top: 0
+    .courses__block
+        margin-top: 20px
+    .courses-popup
+        width: 300px
+        margin-left: -150px
+        border-radius: 20px
+    .courses-popup__container
+        width: 280px
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        padding-top: 0px
+    .courses-popup__block-feature
+        margin-left: 15px
+    .courses-popup__block-feature-text
+        font-size: 14px
+    .courses-popup__block-rating-wrapper
+        width: 270px
+    .courses-popup__block-rating-wrapper
+        margin-top: 0
+    .courses-popup__close-button
+        top: 10px
+    .courses-popup__img
+        width: 216px
+        height: 249px
+    .courses-popup__block
+        justify-content: center
+        text-align: center
+        width: 265px
+    .courses-popup__block-descr
+        margin-top: 0
+        line-height: 15px
+    .courses-popup__block-button
+        margin-top: 5px
+        height: 35px
+    .courses-popup__block-features-wrapper
+        justify-content: center

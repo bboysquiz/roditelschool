@@ -1,0 +1,146 @@
+.footer
+    background-color: #B86774
+    &__container
+        width: 1440px
+        padding: 0 178px 34px 24px
+        display: flex
+        justify-content: space-between
+        margin: 33px auto 0 auto
+        flex-wrap: wrap
+    &__logo
+        &-wrapper
+            align-items: center
+        &-text
+            color: #fff
+    &__nav
+        width: 578px
+        display: flex
+        align-items: center
+    &__list
+        &-menu
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            width: 578px
+            align-items: center
+        &-item
+            list-style-type: none
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+            font-family: Steppe
+            color: #fff
+            cursor: pointer
+    &__block
+        &-left
+            width: 882px
+            display: flex
+            justify-content: space-between
+        &-right
+            width: 302px
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            margin-top: 45px
+        &-bank
+            &-data
+                width: 100%
+                display: flex
+                justify-content: center
+                flex-wrap: wrap
+                & .users-policy
+                    margin-top: 25px
+                    color: #fff
+                    font-size: 16px
+                    font-family: Steppe
+                    font-weight: 400
+                    line-height: 19.2px
+    &__contacts
+        width: 302px
+        display: flex
+        justify-content: flex-end
+        flex-wrap: wrap
+        &-icon
+            &-phone
+                width: 18px
+                height: 18px
+                margin-left: 100px
+            &-mail
+                width: 20px
+                height: 19px
+                margin-left: 15px
+        &-line
+            width: 100%
+            display: flex
+            justify-content: space-between
+            margin-top: 22px
+            &:first-child
+                margin-top: 0
+        &-text
+            font-weight: 400
+            font-size: 18px
+            line-height: 21px
+            font-family: Steppe
+            color: #fff
+            width: 243px
+            text-align: right
+    &__OGRN
+        font-size: 18px
+        font-family: Steppe
+        font-weight: 400
+        line-height: 21.6px
+        color: #fff
+        margin-top: 3px
+        width: 100%
+        text-align: center
+    &__INN
+        font-size: 18px
+        font-family: Steppe
+        font-weight: 400
+        line-height: 21.6px
+        color: #fff
+        margin-top: 10px
+        width: 100%
+        text-align: center
+    &__link
+        color: #fff
+
+
+
+@media screen and ( max-width: 1440px  )
+    .footer__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+    .footer__block-bank-data
+        width: 25%
+        text-align: center
+@media screen and ( max-width: 991px  )
+    .footer__container
+        width: 767px
+        padding-top: 10px
+    .footer__logo-wrapper
+        width: 200px
+    .footer__list-menu
+        width: 500px
+    .footer__nav
+        width: 500px
+    .footer__contacts-icon-phone
+        margin-left: 15px
+@media screen and ( max-width: 767px  )
+    .footer__container
+        width: 320px
+        justify-content: center
+    .footer__nav
+        display: none
+    .footer__block-left
+        width: 320px
+        justify-content: center
+    .footer__contacts-line
+        justify-content: center
+    .footer__contacts-text
+        width: auto
+        margin-left: 20px
+    .footer__block-bank-data
+        width: 182px
+        margin-top: 20px

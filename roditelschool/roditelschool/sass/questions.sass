@@ -1,0 +1,105 @@
+.questions
+    &__container
+        width: 1440px
+        padding: 80px 86px 0px 153px
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        flex-wrap: wrap
+    &__title
+        width: 100%
+        text-align: center
+        line-height: 60px
+        font-size: 48px
+        font-weight: 400
+        font-family: Lobster
+        color: #000
+    &__block
+        background-color: #B86774
+        padding: 40px 280px 40px 113px
+        display: flex
+        justify-content: left
+        flex-wrap: wrap
+        position: relative
+        width: 1340px
+        border-radius: 40px
+        margin-top: 20px
+        margin-bottom: 20px
+        cursor: pointer
+    &__icon
+        &-up
+            position: absolute
+            width: 26px
+            height: 16px
+            top: 56px
+            right: 91px
+            display: none
+            pointer-events: none
+        &-down
+            position: absolute
+            width: 26px
+            height: 16px
+            top: 56px
+            right: 91px
+            display: block
+            pointer-events: none
+    &__text
+        font-size: 24px
+        font-family: Steppe
+        color: #fff
+        font-weight: 400
+        line-height: 39px
+        z-index: 2
+        width: 100%
+        background-color: #b86774
+        pointer-events: none
+    &__answer
+        margin-top: 20px
+        font-size: 18px
+        font-family: Steppe
+        color: #fff
+        font-weight: 400
+        line-height: 21px
+        width: 100%
+        display: none
+        z-index: 1
+        pointer-events: none
+
+@keyframes openAnswer
+    0%
+        margin-top: -22px
+    100%
+        margin-top: 20
+@keyframes closeAnswer
+    0%
+        display: block
+        margin-top: 20px
+    100%
+        display: block
+        margin-top: -40px
+
+@media screen and ( max-width: 1440px  )
+    .questions__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+@media screen and ( max-width: 991px  )
+    .questions__container
+        width: 767px
+@media screen and ( max-width: 767px  )
+    .questions__container
+        width: 320px
+    .questions__block
+        padding-left: 10px
+        padding-right: 10px
+    .questions__text
+        font-size: 18px
+        width: 80%
+        font-size: 15px
+        line-height: 30px
+    .questions__icon-down
+        z-index: 2
+        right: 35px
+    .questions__icon-up
+        z-index: 2
+        right: 35px

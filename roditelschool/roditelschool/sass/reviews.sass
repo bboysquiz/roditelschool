@@ -1,0 +1,110 @@
+.reviews
+    &__container
+        width: 1440px
+        padding: 80px 50px 0px 50px
+        display: flex
+        justify-content: center
+        margin: 0 auto
+        flex-wrap: wrap
+    &__title
+        width: 100%
+        text-align: center
+        line-height: 60px
+        font-size: 48px
+        font-weight: 400
+        font-family: Lobster
+        color: #000
+    &__block
+        &-list
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            width: 1340px
+            margin-top: 40px
+        &-item
+            width: 660px
+            display: flex
+            justify-content: left
+            flex-wrap: wrap
+            padding: 40px 91px 44px 120px
+            position: relative
+            background-color: #b86774
+            border-radius: 40px
+            margin-top: 40px
+        &-icon
+            width: 37px
+            height: 31px
+            position: absolute
+            top: 40px
+            right: 36px
+        &-title
+            font-family: Steppe
+            font-size: 24px
+            line-height: 28.8px
+            font-weight: 400
+            color: #fff
+        &-text
+            font-family: Steppe
+            font-size: 16px
+            line-height: 25.6px
+            font-weight: 400
+            color: #fff
+            margin-top: 10px
+    &__descr
+        width: 100%
+        text-align: center
+        font-family: Steppe
+        font-size: 18px
+        line-height: 21.6px
+        color: #000
+        font-weight: 400
+        margin-top: 40px
+        padding: 0 410px
+    &__button
+        background-color: #fad191
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 142px
+        height: 58px
+        margin-top: 40px
+        color: #000
+        font-size: 18px
+        line-height: 21.6px
+        font-weight: 400
+        font-family: Steppe
+        border-radius: 50px
+        cursor: pointer
+        
+@media screen and ( max-width: 1440px  )
+    .reviews__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+    .reviews__block-list
+        width: 991px
+    .reviews__block-item
+        width: 470px
+        padding-left: 91px
+    .reviews__descr
+        padding-left: 260px
+        padding-right: 260px
+@media screen and ( max-width: 991px  )
+    .reviews__container
+        width: 767px
+    .reviews__block-item
+        width: 365px
+        padding-left: 70px
+    .reviews__descr
+        padding-right: 170px
+        padding-left: 170px
+@media screen and ( max-width: 767px  )
+    .reviews__container
+        width: 320px
+    .reviews__block-item
+        width: 300px
+        padding-left: 10px
+        padding-right: 10px
+    .reviews__descr
+        padding-left: 0
+        padding-right: 0

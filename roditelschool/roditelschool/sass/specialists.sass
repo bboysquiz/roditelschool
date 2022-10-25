@@ -1,0 +1,224 @@
+.specialists
+    &__container
+        width: 1440px
+        padding: 80px 67px 0px 67px
+        display: flex
+        justify-content: center
+        margin: 0 auto
+        flex-wrap: wrap
+    &__title
+        width: 100%
+        text-align: center
+        line-height: 60px
+        font-size: 48px
+        font-weight: 400
+        font-family: Lobster
+        color: #000
+    &__block
+        &-list
+            display: flex
+            justify-content: space-between
+            width: 938px
+            flex-wrap: wrap
+        &-item
+            width: 427px
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            margin-top: 75px
+            &:last-child .specialists__block-title
+                margin-top: 17px
+        &-title
+            margin-top: 40px
+            border-bottom: 2px solid #b86774
+            color: #000
+            font-family: Lobster
+            font-weight: 400
+            font-size: 18px
+            line-height: 22px
+            padding-bottom: 10px
+            width: 300px
+            text-align: center
+        &-text
+            margin-top: 10px
+            color: #000
+            line-height: 19px
+            font-size: 16px
+            font-weight: 400
+            font-family: Steppe
+            opacity: .5
+            width: 396px
+            text-align: center
+            &:first-child
+                margin-top: 20px
+        &-button
+            margin-top: 40px
+            width: 181px
+            height: 58px
+            display: flex
+            justify-content: center
+            align-items: center
+            background-color: #FAD191
+            color: #000
+            font-weight: 400
+            line-height: 21px
+            font-size: 18px
+            font-family: Steppe
+            border-radius: 50px
+            cursor: pointer
+    &__img
+        border-radius: 150px
+        width: 233px
+        height: 233px
+    &-popup
+        &__layer
+            position: fixed
+            display: none
+            background-color: #000
+            opacity: .3
+            height: 100%
+            width: 100%
+            top: 0
+            left: 0
+            z-index: 9
+        &__block
+            &-item
+                display: none
+                justify-content: left
+                flex-wrap: wrap
+                width: 1000px
+                height: 875px
+                top: 50%
+                left: 50%
+                position: fixed
+                margin-top: -437.5px
+                margin-left: -500px
+                background-color: #fff
+                padding: 31px 31px 300px 30px
+                z-index: 10
+            &-text
+                font-size: 16px
+                font-family: Steppe
+                color: #000
+                line-height: 25.6px
+                font-weight: 400
+                margin-top: 10px
+                width: 100%
+                &-wrapper
+                    display: flex
+                    justify-content: left
+                    flex-wrap: wrap
+                    width: 491px
+                &-list
+                    &-item
+                        font-size: 16px
+                        font-family: Steppe
+                        color: #000
+                        line-height: 25.6px
+                        font-weight: 400
+                        margin-top: 10px
+            &-title
+                color: #000
+                font-family: Lobster
+                font-weight: 400
+                font-size: 18px
+                line-height: 22px
+                padding-bottom: 10px
+                width: 100%
+                text-align: left
+            &-margin
+                margin-top: 20px
+            &-img
+                width: 314px
+                height: 314px
+                border-radius: 150px
+                margin-right: 71px
+        &__close
+            &-button
+                width: 25px
+                height: 25px
+                color: #09121f
+                cursor: pointer
+                &-wrapper
+                    width: 100%
+                    height: 25px
+                    display: flex
+                    justify-content: right
+#specialistFirst
+    max-height: 875px
+#specialistSecond
+    max-height: 1115px
+    & .specialists-popup__block-text-list-item
+        line-height: 15px
+    & .specialists-popup__block-text
+        line-height: 19px
+#specialistThird
+    max-height: 775px
+#specialistFourth
+    max-height: 981px
+    & .specialists-popup__block-text-list-item
+        line-height: 19px
+    & .specialists-popup__block-text
+        line-height: 19px
+    
+    
+@media screen and ( max-width: 1440px  )
+    .specialists__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+        padding-top: 50px
+    .specialists-popup__block-item
+        width: 900px
+        margin-left: -450px
+    .specialists-popup__block-text-wrapper
+        width: 437px
+    .specialists-popup__block-text-list-item
+        line-height: 17px
+    .specialists-popup__block-text
+        line-height: 17px
+    .specialists-popup__block-margin
+        margin-top: 5px
+    #specialistFirst
+        max-height: 730px
+        margin-top: -365px
+    #specialistSecond
+        max-height: 775px
+        margin-top: -387px
+    #specialistThird
+        max-height: 730px
+        margin-top: -365px
+    #specialistFourth
+        max-height: 775px
+        margin-top: -387px
+@media screen and ( max-width: 991px  )
+    .specialists__container
+        width: 767px
+    .specialists__block-list
+        justify-content: center
+    .specialists-popup__block-img
+        margin-left: 35px
+    .specialists-popup__block-item
+        width: 700px
+        margin-left: -350px
+    .specialists-popup__block-img
+        margin-left: 0
+        margin-right: 30px
+        width: 200px
+        height: 200px
+    .specialists-popup__block-text-wrapper
+        width: 408px
+    .specialists-popup__block-text
+        line-height: 16px!important
+@media screen and ( max-width: 767px  )
+    .specialists__container
+        width: 320px
+    .specialists-popup__block-item
+        width: 300px
+        margin-left: -150px
+        padding-top: 10px
+        justify-content: center
+        flex-wrap: wrap
+    .specialists-popup__block-img
+        margin-right: 0
+    

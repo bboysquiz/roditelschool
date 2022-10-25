@@ -1,0 +1,76 @@
+.advertisement
+    &__container
+        width: 1440px
+        padding: 100px 164px 0px 167px
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        flex-wrap: wrap
+    &__title
+        width: 100%
+        text-align: center
+        line-height: 60px
+        font-size: 48px
+        font-weight: 400
+        font-family: Lobster
+        color: #000
+    &__block
+        margin-top: 206px
+        display: flex
+        flex-wrap: wrap
+        justify-content: left
+        width: 446px
+        height: 187px
+    &__text
+        font-family: Steppe
+        font-weight: 400
+        font-size: 16px
+        line-height: 25px
+        color: #000
+        height: 76px
+    &__button
+        margin-top: 53px
+    &__image
+        width: 595px
+        height: 523px
+
+@media screen and ( max-width: 1440px  )
+    .advertisement__container
+        width: 991px
+        padding-left: 10px
+        padding-right: 10px
+    .advertisement__image
+        width: 504px
+        height: auto
+@media screen and ( max-width: 991px  )
+    .advertisement__container
+        width: 767px
+        padding-left: 10px
+        padding-right: 10px
+    .advertisement__block
+        width: 362px
+        margin-top: 180px
+    .advertisement__text
+        height: auto
+    .advertisement__image
+        width: 385px
+        margin-top: 63px
+@media screen and ( max-width: 767px  )
+    .advertisement__container
+        width: 320px
+        padding-left: 10px
+        padding-right: 10px
+        justify-content: center
+    .advertisement__title
+        font-size: 36px
+    .advertisement__block
+        margin-top: 20px
+        order: 2
+        text-align: center
+        justify-content: center
+    .advertisement__image
+        width: 287px
+        order: 1
+        margin-top: 20px
+    .advertisement__button
+        margin-top: 20px
